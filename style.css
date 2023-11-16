@@ -1,0 +1,81 @@
+body{
+    background-color: lightgray;
+}
+.card-container{
+    height: fit-content;
+}
+
+.plan {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15em;
+    height: fit-content;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    box-shadow: 0 0.2em 0.4em 0 rgba(0, 0, 0, 0.2), 0 0.3em 1.2em 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1em;
+    transition:all 1s ease;
+}
+
+.plan hr.red{
+    border-top: 0.2em solid rgb(231, 72, 72);
+}
+.plan hr.orange{
+    border-top:0.2em solid orange;
+}
+.plan hr.blue{
+    border-top:0.2em solid rgb(58, 58, 148);
+}
+.plan hr.green{
+    border-top:0.2em solid greenyellow;
+}
+hr.red,hr.orange,hr.blue,hr.green{
+    width: 100%;
+    border: none;
+}
+h5{
+    font-weight: 700;
+}
+.price{
+    font-weight: bold;
+    font-size: 2.3em;
+}
+.per-month{
+    color:gainsboro;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+}
+.casual{
+    margin-bottom: 0.5em;
+}
+#button-red,#button-orange,#button-blue,#button-green{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 2em;
+    width:45%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 1em;
+}
+#button-red{
+    background-color: rgb(231, 72, 72);
+}
+#button-orange{
+    background-color: orange;
+}
+#button-blue{
+    background-color: rgb(58, 58, 148);
+}
+#button-green{
+    background-color: greenyellow;
+}
+.plan:hover{
+    transform: scale(1.2);
+}
